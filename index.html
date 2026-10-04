@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cek Sitasi dan Skor AI | UT Family</title>
+<meta name="description" content="Cek kecocokan sitasi dengan daftar pustaka dan skor gaya tulisan. UT Family.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="bar2">
+  <div class="inner">
+    <div class="menu" role="tablist">
+      <button class="tab active" id="tab-sitasi" role="tab" aria-selected="true">Cek Sitasi</button>
+      <button class="tab" id="tab-skor" role="tab" aria-selected="false">Skor AI</button>
+    </div>
+  </div>
+</nav>
+
+<main class="page">
+  <section id="panel-sitasi">
+    <h1>Cek Sitasi</h1>
+    <p class="lead">Cocokkan sitasi di isi tulisan dengan daftar pustaka. Teks diproses di browser dan tidak disimpan.</p>
+    <div class="card">
+      <textarea id="in-sitasi" placeholder="Tempel isi tulisan beserta daftar pustaka di bawahnya. Judul Daftar Pustaka, Daftar Referensi, atau Referensi dipakai sebagai pemisah."></textarea>
+      <div class="foot">
+        <button class="btn ghost" id="demo-sitasi">Isi Contoh</button>
+        <button class="btn" id="run-sitasi">Periksa Sitasi</button>
+      </div>
+    </div>
+    <div id="out-sitasi" class="result card" hidden></div>
+  </section>
+
+  <section id="panel-skor" hidden>
+    <h1>Skor AI</h1>
+    <p class="lead">Estimasi keseragaman gaya tulisan dari variasi kalimat, kosakata, kata transisi, awal kalimat, dan panjang paragraf. Ini bukan bukti penggunaan AI.</p>
+    <div class="card">
+      <textarea id="in-skor" placeholder="Tempel teks minimal sekitar 40 kata."></textarea>
+      <div class="foot">
+        <button class="btn ghost" id="demo-skor">Isi Contoh</button>
+        <button class="btn" id="run-skor">Analisis</button>
+      </div>
+    </div>
+    <div id="out-skor" class="result card" hidden></div>
+  </section>
+
+  <p class="disclaimer">Hasil bersifat indikatif. Periksa ulang secara manual sebelum mengumpulkan tugas. Rujukan format sitasi: APA edisi 7.</p>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

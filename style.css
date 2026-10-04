@@ -1,0 +1,71 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: #f6fbff; color: #12304d; font-family: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif; line-height: 1.6; }
+.inner { max-width: 1200px; margin: 0 auto; padding: 0 22px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.bar1 { background: #5bbff8; height: 60px; display: flex; align-items: center; }
+.bar1 .inner { width: 100%; }
+.brand { display: flex; align-items: center; gap: 14px; font-weight: 800; font-size: 1.15rem; color: #0c2a45; min-width: 0; line-height: 1.2; }
+.logo { width: 44px; height: 44px; border-radius: 50%; background: #fff; display: flex; align-items: center; justify-content: center; overflow: hidden; font-size: .85rem; font-weight: 800; color: #0284c7; }
+.logo img { width: 100%; height: 100%; object-fit: cover; }
+.bar2 { background: #b8e2fa; height: 50px; display: flex; align-items: center; }
+.bar2 .inner { width: 100%; justify-content: center; }
+.tagline { font-size: .8rem; font-weight: 600; color: #1d4a6e; white-space: nowrap; flex: 1; }
+.spacer { flex: 1; }
+.menu { display: flex; gap: 6px; }
+.tab { border: 0; background: transparent; color: #12304d; font: inherit; font-weight: 700; font-size: .92rem; padding: 7px 16px; border-radius: 999px; cursor: pointer; }
+.tab:hover { background: rgba(255, 255, 255, .5); }
+.tab.active { background: #0f2b46; color: #fff; }
+.page { max-width: 960px; margin: 0 auto; padding: 36px 22px 40px; }
+h1 { margin: 0 0 4px; font-size: 2.3rem; font-weight: 800; color: #0f2b46; line-height: 1.2; }
+.lead { margin: 0 0 20px; color: #3b6585; font-weight: 500; }
+.card { background: #fff; border: 1px solid #cfe8f7; border-radius: 18px; padding: 16px 16px 14px; }
+textarea { display: block; width: 100%; min-height: 200px; border: 0; background: transparent; color: #12304d; font: inherit; resize: vertical; padding: 4px 4px 12px; }
+textarea:focus { outline: none; }
+textarea::placeholder { color: #8a9bab; }
+.foot { display: flex; justify-content: space-between; align-items: center; gap: 8px; border-top: 1px solid #d6ecf9; padding-top: 12px; }
+.btn { padding: 10px 24px; border: 1px solid #0f2b46; background: #0f2b46; color: #fff; border-radius: 999px; font: inherit; font-weight: 700; cursor: pointer; }
+.btn:hover { background: #17406a; }
+.btn.ghost { background: #fff; color: #0f2b46; border-color: #cfe8f7; }
+.btn.ghost:hover { background: #f0f9ff; }
+.btn:disabled { opacity: .6; cursor: default; }
+.result { margin-top: 16px; padding: 18px; }
+.summary { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+.stat { flex: 1; min-width: 120px; background: #f0f9ff; border: 1px solid #cfe8f7; border-radius: 14px; padding: 10px 14px; }
+.stat b { display: block; font-size: 1.6rem; color: #0284c7; }
+.stat span { font-size: .8rem; color: #3b6585; }
+.group { margin: 14px 0; }
+.group h3 { margin: 0 0 4px; font-size: 1rem; color: #0f2b46; }
+.group ul { margin: 4px 0 0; padding-left: 20px; }
+.group li { margin: 2px 0; font-size: .92rem; }
+.ok { color: #047857; }
+.warn { color: #b45309; }
+.bad { color: #b91c1c; }
+.bigscore { font-size: 2.8rem; font-weight: 800; color: #0284c7; line-height: 1.1; }
+.row { display: flex; justify-content: space-between; font-size: .92rem; margin-top: 10px; font-weight: 600; }
+.bar { height: 8px; background: #dff0fb; border-radius: 4px; overflow: hidden; margin: 3px 0; }
+.bar i { display: block; height: 100%; background: #5bbff8; }
+.small { font-size: .8rem; color: #3b6585; font-weight: 500; }
+.note { margin-top: 14px; padding: 10px 14px; background: #f0f9ff; border-left: 3px solid #5bbff8; border-radius: 8px; font-size: .85rem; color: #1d4a6e; }
+.disclaimer { margin-top: 22px; font-size: .8rem; color: #5c7f9a; }
+@media (max-width: 480px) {
+  .inner { padding: 0 14px; }
+  .bar1 { height: 56px; }
+  .brand { gap: 10px; font-size: 1rem; }
+  .logo { width: 38px; height: 38px; flex: none; }
+  .menu { width: 100%; }
+  .tab { flex: 1; text-align: center; }
+  .page { padding: 24px 14px 32px; }
+  h1 { font-size: 1.55rem; }
+  .card { border-radius: 14px; padding: 12px 12px 12px; }
+  textarea { min-height: 170px; }
+  .btn { padding: 10px 16px; font-size: .9rem; }
+  .stat { min-width: 90px; }
+  .stat b { font-size: 1.3rem; }
+  .result { padding: 14px; }
+}
+@media (max-width: 720px) {
+  .bar2 { height: auto; padding: 8px 0; }
+  .bar2 .inner { flex-wrap: wrap; justify-content: center; }
+  .tagline { display: none; }
+  .spacer { display: none; }
+  h1 { font-size: 1.8rem; }
+}
